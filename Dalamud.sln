@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalamud.Crypto", "src\Dalam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalamud.Testing", "src\Dalamud.Testing\Dalamud.Testing.csproj", "{92442B23-908A-4758-80A2-224DF00DAE90}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalamud.Plugins", "src\Dalamud.Plugins\Dalamud.Plugins.csproj", "{232910D9-732B-478F-BAC1-260C01D59935}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalamud.SamplePlugin", "src\Dalamud.SamplePlugin\Dalamud.SamplePlugin.csproj", "{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{08649302-403C-4837-AEC5-8259182C65B8}"
@@ -43,6 +45,10 @@ Global
 		{92442B23-908A-4758-80A2-224DF00DAE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92442B23-908A-4758-80A2-224DF00DAE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92442B23-908A-4758-80A2-224DF00DAE90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232910D9-732B-478F-BAC1-260C01D59935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232910D9-732B-478F-BAC1-260C01D59935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232910D9-732B-478F-BAC1-260C01D59935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232910D9-732B-478F-BAC1-260C01D59935}.Release|Any CPU.Build.0 = Release|Any CPU
 		{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}.Release|Any CPU.ActiveCfg = Release|Any CPU

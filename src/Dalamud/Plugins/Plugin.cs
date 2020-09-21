@@ -4,7 +4,6 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using Dalamud.Plugins.Internal;
 
 namespace Dalamud.Plugins
 {
@@ -15,7 +14,7 @@ namespace Dalamud.Plugins
     {
         private PluginLoadContext LoadContext { get; init; } = null!;
 
-        private PluginBase Instance { get; init; } = null!;
+        private IPlugin Instance { get; init; } = null!;
 
         public Manifest Manifest { get; init; } = null!;
 

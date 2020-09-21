@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dalamud\Dalamud.csproj" />
+    <ProjectReference Include="..\Dalamud.Plugins\Dalamud.Plugins.csproj" />
   </ItemGroup>
 
 </Project>
