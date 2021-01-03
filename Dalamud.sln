@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalamud.Testing", "src\Dala
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalamud.SamplePlugin", "src\Dalamud.SamplePlugin\Dalamud.SamplePlugin.csproj", "{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{08649302-403C-4837-AEC5-8259182C65B8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,8 +45,6 @@ Global
 		{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745A9BF8-DA1F-4A5D-BAC9-77160E3B80AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08649302-403C-4837-AEC5-8259182C65B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08649302-403C-4837-AEC5-8259182C65B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
