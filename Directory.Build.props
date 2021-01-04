@@ -1,13 +1,20 @@
 <Project>
   <PropertyGroup>
-    <Nullable>enable</Nullable>
-    <LangVersion>preview</LangVersion>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Deterministic>true</Deterministic>
+    <ProjectRoot>$(MSBuildThisFileDirectory)</ProjectRoot>
+    <DalamudLibraryDir>$(MSBuildThisFileDirectory)/lib</DalamudLibraryDir>
   </PropertyGroup>
 
   <PropertyGroup>
-    <ProjectRoot>$(MSBuildThisFileDirectory)</ProjectRoot>
-    <DalamudLibraryDir>$(MSBuildThisFileDirectory)/lib</DalamudLibraryDir>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputPath>$(MSBuildThisFileDirectory)/artifacts</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 </Project>
