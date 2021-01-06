@@ -18,21 +18,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # - name: 'Cache: nuget'
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: ~/.nuget/packages
-      #     key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-nuget-
+      - uses: actions/cache@v2
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
 
-      # - name: 'Install: .NET Core'
-      #   uses: actions/setup-dotnet@v1
-      #   with:
-      #     dotnet-version: '5.0'
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0'
 
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: dalamud
-      #     path: |
-      #       artifacts/release/**
+      - name: Build dalamud
+        run: |
+          dotnet publish `
+          --configuration Release `
+          --output artifacts `
+          src/Dalamud
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dalamud
+          path: |
+            artifacts
