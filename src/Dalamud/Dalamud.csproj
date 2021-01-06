@@ -1,7 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>Dalamud</RootNamespace>
   </PropertyGroup>

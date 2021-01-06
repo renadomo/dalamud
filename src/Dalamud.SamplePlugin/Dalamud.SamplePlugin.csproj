@@ -1,15 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
-  </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Dalamud\Dalamud.csproj">
       <PrivateAssets>false</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </ProjectReference>
   </ItemGroup>
-
 </Project>

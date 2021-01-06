@@ -1,20 +1,26 @@
 <Project>
   <PropertyGroup>
     <ProjectRoot>$(MSBuildThisFileDirectory)</ProjectRoot>
-    <DalamudLibraryDir>$(MSBuildThisFileDirectory)/lib</DalamudLibraryDir>
   </PropertyGroup>
 
-  <PropertyGroup>
+  <PropertyGroup Label="Target">
     <TargetFramework>net5.0-windows</TargetFramework>
     <LangVersion>preview</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <OutputPath>$(MSBuildThisFileDirectory)/artifacts</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
     <Deterministic>true</Deterministic>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugType>Portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <!-- TODO: maybe don't ship it? or ship it?-->
+    <!-- <DebugType>None</DebugType> -->
+    <DebugType>Portable</DebugType>
+  </PropertyGroup>
+
 </Project>
